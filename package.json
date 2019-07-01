@@ -36,6 +36,7 @@
     "proxy": "node ./tasks/local-testnet/proxy.js",
     "certificates": "docker-compose -f tasks/certificates/docker-compose.yml up",
     "frontend": "cross-env NODE_ENV=development webpack-dev-server --hot --colors --config webpack.config.js --port 9080 --https --mode=development --cert 'certs/dev.crt' --key 'certs/dev.key'",
+    "frontend-redirect": "cross-env NODE_ENV=development STARGATE=https://stargate.lunie.io RPC=https://rpc.lunie.io:26657 webpack-dev-server --hot --colors --config webpack.config.js --port 9080 --https --mode=development --cert 'certs/dev.crt' --key 'certs/dev.key'",
     "changelog": "simsala log --pending-path ./changes",
     "release": "git checkout develop & git pull & git push origin develop:release"
   },

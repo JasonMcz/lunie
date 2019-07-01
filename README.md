@@ -60,6 +60,14 @@ First generate some SSL certificates and add them to your trusted certificates.
 ```bash
 yarn certificates
 ```
+### Just Run frontend without deploying testnet
+
+If you don't want to deploy your own testnet but still want to populate the frontend data, you may connect to Lunie's native RPC and stargate by running this script I created for us. Viewable under `package.json`
+
+```bash
+sudo yarn frontend-redirect
+```
+
 
 ### Run local testnet
 
@@ -93,7 +101,7 @@ STARGATE=<https://StargateAddress:port> RPC=<https://RPCAddress:port> yarn build
 If you haven't installed a local testnet here is a good way to test the front-end UI with data populated from Lunie's native RPC:
 
 ```bash
-STARGATE=<https://stargate.lunie.io> RPC=<https://rpc.lunie.io:26657> yarn build:ui
+STARGATE=https://stargate.lunie.io RPC=https://rpc.lunie.io:26657 yarn build:ui
 ```
 
 ## Release
