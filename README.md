@@ -90,6 +90,12 @@ If you want to set a particular `Stargate` (Cosmos SDK REST API) or Tendermint's
 STARGATE=<https://StargateAddress:port> RPC=<https://RPCAddress:port> yarn build:ui
 ```
 
+If you haven't installed a local testnet here is a good way to test the front-end UI with data populated from Lunie's native RPC:
+
+```bash
+STARGATE=<https://stargate.lunie.io> RPC=<https://rpc.lunie.io:26657> yarn build:ui
+```
+
 ## Release
 
 Lunie has a automated release process. Every night the CI creates a new release PR. To release manually, run
