@@ -4,7 +4,7 @@
   /* colors */
   --tertiary: hsl(182.4, 100%, 48.6%);
   --secondary: hsl(277, 92%, 58%);
-  --primary: hsl(233, 88%, 57%);
+  --primary: hsl(182.4, 100%, 35.6%);
   --link: hsl(182.4, 100%, 48.6%);
   --link-dark: hsl(182.4, 100%, 20.6%);
   --link-hover: rgb(255,255,255,1);

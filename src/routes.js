@@ -73,6 +73,11 @@ export default [
     meta: { requiresAuth: true }
   },
   {
+    path: `/migration`,
+    name: `migration`,
+    component: require(`./components/migration/PageNetwork`).default
+  },
+  {
     path: `/`,
     name: `network`,
     component: require(`./components/network/PageNetwork`).default

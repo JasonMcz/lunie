@@ -1,6 +1,21 @@
 <template>
   <menu class="app-menu">
     <div class="app-menu-main">
+
+    <router-link
+      id="app-menu__migration"
+      class="app-menu-item"
+      to="/migration"
+      exact="exact"
+      title="Migration Helper(external)"
+      @click.native="close"
+    >
+      <h2 class="app-menu-title">
+      Start Migration      <i class="material-icons info-button">info_outline</i>
+ <div style = "font-size:8.5px;"> COMING SOON </div>
+      </h2>
+      <i class="material-icons">chevron_right</i>
+    </router-link>
       <router-link
         id="app-menu__wallet"
         class="app-menu-item"
